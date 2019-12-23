@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nUd-fr-vrH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шляпа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lk6-4o-b3d">
+                                <rect key="frame" x="74.5" y="139.5" width="265" height="58.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58.700000000000003" id="D7r-YW-Qch"/>
+                                    <constraint firstAttribute="width" constant="265" id="dwI-1E-t31"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="81.5"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра в слова для 2-х команд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-fG-9Uq">
+                                <rect key="frame" x="71" y="218.5" width="272" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUg-N4-D3F">
+                                <rect key="frame" x="73.5" y="623.5" width="267" height="66.5"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266.69999999999999" id="ISW-kA-HMi"/>
+                                    <constraint firstAttribute="height" constant="66.700000000000003" id="ZOq-w8-79V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <state key="normal" title="Новая игра">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAllert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n5W-lO-iPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-yR-qhH">
+                                <rect key="frame" x="73.5" y="703.5" width="267" height="66.5"/>
+                                <color key="backgroundColor" white="0.40999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66.700000000000003" id="LK9-gc-PKS"/>
+                                    <constraint firstAttribute="width" constant="266.69999999999999" id="pwH-YV-mXy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <state key="normal" title="Продолжить игру">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="sdy-rN-axN">
+                                <rect key="frame" x="62" y="291" width="226.5" height="248.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226.69999999999999" id="IHL-Ir-G50"/>
+                                    <constraint firstAttribute="height" constant="248.30000000000001" id="MD5-u2-B2u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sCD-fG-9Uq" firstAttribute="top" secondItem="Lk6-4o-b3d" secondAttribute="bottom" constant="20.699999999999999" id="4ol-q6-nrF"/>
+                            <constraint firstItem="Lk6-4o-b3d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="139.30000000000001" id="5YW-9d-bdW"/>
+                            <constraint firstItem="sdy-rN-axN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61.799999999999997" id="FTc-Ub-EbZ"/>
+                            <constraint firstItem="sUg-N4-D3F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JwL-1d-JOw"/>
+                            <constraint firstItem="sCD-fG-9Uq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PwD-Sb-VEU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KQV-yR-qhH" secondAttribute="bottom" constant="92" id="QNC-5V-beg"/>
+                            <constraint firstItem="KQV-yR-qhH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n9I-f4-Dd9"/>
+                            <constraint firstItem="sdy-rN-axN" firstAttribute="top" secondItem="sCD-fG-9Uq" secondAttribute="bottom" constant="48.299999999999997" id="sdX-YS-ZRE"/>
+                            <constraint firstItem="KQV-yR-qhH" firstAttribute="top" secondItem="sUg-N4-D3F" secondAttribute="bottom" constant="13.300000000000001" id="vp7-L5-KGy"/>
+                            <constraint firstItem="Lk6-4o-b3d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wjg-oe-Zi7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E4W-xc-ozT">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="bkk-Rh-i8O"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lastGame" destination="KQV-yR-qhH" id="P09-Tw-G6w"/>
+                        <outlet property="newGame" destination="sUg-N4-D3F" id="7Ix-ks-Ias"/>
+                        <segue destination="i6l-JH-V34" kind="show" identifier="ruleSegue" id="9JC-bn-mHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957" y="114"/>
+        </scene>
+        <!--Rule View Controller-->
+        <scene sceneID="Ewn-NT-NAS">
+            <objects>
+                <viewController storyboardIdentifier="Rule1" id="i6l-JH-V34" customClass="RuleViewController" customModule="HatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KI4-EU-1YU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ход команды №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-3j-JZs">
+                                <rect key="frame" x="97" y="170" width="220" height="32"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="26.700000762939453"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAg-4j-Zox">
+                                <rect key="frame" x="73.5" y="703.5" width="267" height="66.5"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66.700000000000003" id="SDp-Q4-ehT"/>
+                                    <constraint firstAttribute="width" constant="266.69999999999999" id="vpt-FX-NcB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <state key="normal" title="Старт">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3lP-B8-f7u" kind="show" identifier="gameSegue" id="SB3-mW-b6B"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-YB-nnS">
+                                <rect key="frame" x="47" y="278.5" width="320" height="275"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="6Fy-sp-4R0"/>
+                                    <constraint firstAttribute="height" constant="275" id="UGD-K6-2GU"/>
+                                </constraints>
+                                <string key="text">Вам даётся 1 минута 
+
+Нажимайте «Угадано»
+или «Пас»,  для получения 
+следующего слова
+
+Объясните как можно 
+больше слов за ход</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oSE-3j-JZs" firstAttribute="top" secondItem="KI4-EU-1YU" secondAttribute="top" constant="170" id="003-bl-hbV"/>
+                            <constraint firstItem="GRw-YB-nnS" firstAttribute="centerX" secondItem="KI4-EU-1YU" secondAttribute="centerX" id="Frq-VQ-zeZ"/>
+                            <constraint firstItem="oSE-3j-JZs" firstAttribute="centerX" secondItem="KI4-EU-1YU" secondAttribute="centerX" id="Iyc-3a-a4V"/>
+                            <constraint firstItem="bAg-4j-Zox" firstAttribute="top" secondItem="GRw-YB-nnS" secondAttribute="bottom" constant="150" id="WQU-An-3sB"/>
+                            <constraint firstItem="bAg-4j-Zox" firstAttribute="centerX" secondItem="KI4-EU-1YU" secondAttribute="centerX" id="bS2-w0-3OZ"/>
+                            <constraint firstItem="yW3-d1-3fB" firstAttribute="bottom" secondItem="bAg-4j-Zox" secondAttribute="bottom" constant="92" id="pNy-oy-Uoc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yW3-d1-3fB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6fT-1u-oua">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="pOP-rg-5ba"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="numberTeamRule" destination="oSE-3j-JZs" id="rBq-Mc-Pxz"/>
+                        <outlet property="startButton" destination="bAg-4j-Zox" id="ZRC-sc-vyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ouw-FL-Vi4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2821.739130434783" y="113.83928571428571"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="So8-8A-cNB">
+            <objects>
+                <viewController id="3lP-B8-f7u" customClass="gameViewController" customModule="HatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tIK-Iq-AcL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ход команды №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVe-CH-6zF">
+                                <rect key="frame" x="90.5" y="170" width="233" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="Orn-5a-Va6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="26.700000762939453"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="072-Xh-Kfz">
+                                <rect key="frame" x="73.5" y="703.5" width="267" height="66.5"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66.700000000000003" id="IRr-bE-kmp"/>
+                                    <constraint firstAttribute="width" constant="266.69999999999999" id="Q8Q-y7-Aic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <state key="normal" title="Угаданно">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessedWord:" destination="3lP-B8-f7u" eventType="touchUpInside" id="Xes-oi-ite"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytt-Og-hDJ">
+                                <rect key="frame" x="102.5" y="247" width="209" height="87.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="73.199996948242188"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадано 0 слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhS-XM-hSr">
+                                <rect key="frame" x="128" y="325" width="158" height="26"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v17-bM-7eq">
+                                <rect key="frame" x="73.5" y="483.5" width="267" height="66.5"/>
+                                <color key="backgroundColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266.69999999999999" id="34e-0V-VSW"/>
+                                    <constraint firstAttribute="height" constant="66.700000000000003" id="fy7-2l-KSh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <state key="normal" title="Пас">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="passWord:" destination="3lP-B8-f7u" eventType="touchUpInside" id="BnG-Fx-QKo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWH-3W-xUz">
+                                <rect key="frame" x="178" y="619.5" width="58" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17.300000000000001" id="lxL-ji-Joi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="23.299999237060547"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="072-Xh-Kfz" firstAttribute="top" secondItem="v17-bM-7eq" secondAttribute="bottom" constant="153.30000000000001" id="3y7-6G-oDe"/>
+                            <constraint firstItem="072-Xh-Kfz" firstAttribute="centerX" secondItem="tIK-Iq-AcL" secondAttribute="centerX" id="CD8-Xu-hCY"/>
+                            <constraint firstItem="v17-bM-7eq" firstAttribute="centerX" secondItem="tIK-Iq-AcL" secondAttribute="centerX" id="JvN-0H-Vwo"/>
+                            <constraint firstItem="SVe-CH-6zF" firstAttribute="top" secondItem="tIK-Iq-AcL" secondAttribute="top" constant="170" id="TU8-FP-cfR"/>
+                            <constraint firstItem="jWH-3W-xUz" firstAttribute="top" secondItem="v17-bM-7eq" secondAttribute="bottom" constant="69.700000000000003" id="YxG-xZ-G93"/>
+                            <constraint firstItem="jWH-3W-xUz" firstAttribute="centerX" secondItem="tIK-Iq-AcL" secondAttribute="centerX" id="ar3-k5-tan"/>
+                            <constraint firstItem="ytt-Og-hDJ" firstAttribute="top" secondItem="SVe-CH-6zF" secondAttribute="bottom" constant="45" id="bgQ-ZF-AXr"/>
+                            <constraint firstItem="HOy-nN-Eaq" firstAttribute="bottom" secondItem="072-Xh-Kfz" secondAttribute="bottom" constant="92" id="haw-0B-OMx"/>
+                            <constraint firstItem="vhS-XM-hSr" firstAttribute="top" secondItem="SVe-CH-6zF" secondAttribute="bottom" constant="123" id="stb-I7-Wrp"/>
+                            <constraint firstItem="vhS-XM-hSr" firstAttribute="centerX" secondItem="tIK-Iq-AcL" secondAttribute="centerX" id="tx5-8E-JCT"/>
+                            <constraint firstItem="SVe-CH-6zF" firstAttribute="centerX" secondItem="tIK-Iq-AcL" secondAttribute="centerX" id="yJL-z8-ks7"/>
+                            <constraint firstItem="ytt-Og-hDJ" firstAttribute="centerX" secondItem="tIK-Iq-AcL" secondAttribute="centerX" id="zrs-Qc-Mth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HOy-nN-Eaq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T3f-ll-Jmr"/>
+                    <connections>
+                        <outlet property="Words" destination="jWH-3W-xUz" id="Kix-1P-11g"/>
+                        <outlet property="numberTeamGame" destination="SVe-CH-6zF" id="GWw-aQ-jrz"/>
+                        <outlet property="numberWords" destination="vhS-XM-hSr" id="woJ-DE-Coa"/>
+                        <outlet property="pass" destination="v17-bM-7eq" id="pqI-fU-CJ3"/>
+                        <outlet property="timerLabel" destination="ytt-Og-hDJ" id="Wng-D1-M28"/>
+                        <outlet property="ygadano" destination="072-Xh-Kfz" id="t6B-07-SM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5B3-9e-t9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3618.840579710145" y="113.83928571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L3k-kG-btB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nUd-fr-vrH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="De3-cy-Uiq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NN1-tl-dPA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P89-67-bSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="196" height="214.5"/>
+    </resources>
+</document>
