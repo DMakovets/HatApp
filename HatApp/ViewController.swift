@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBAction func showAllert(_ sender: Any) {
         let alertNewGame = UIAlertController(title: "Начать новую игру?", message: "Результаты последней игры будут удалены", preferredStyle: .alert)
-        let alertGo = UIAlertAction(title: "Начать", style: .default) {(action) in
+        let alertGo = UIAlertAction(title: "Начать", style: .default) { action in
             self.performSegue(withIdentifier: "ruleSegue", sender: nil)}
         let alertNo = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
         

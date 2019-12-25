@@ -17,7 +17,8 @@
 		CEFDFEA423AE0F08006FDC35 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */; };
 		CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */; };
 		CEFDFEA823AEC544006FDC35 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA723AEC544006FDC35 /* gameViewController.swift */; };
-		CEFDFEAD23B12FE4006FDC35 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEAC23B12FE4006FDC35 /* myWords.txt */; };
+		CEFDFEAF23B13480006FDC35 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEAE23B13480006FDC35 /* myWords.txt */; };
+		CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 		CEFDFEA723AEC544006FDC35 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
-		CEFDFEAC23B12FE4006FDC35 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Desktop/myWords.txt; sourceTree = "<group>"; };
+		CEFDFEAE23B13480006FDC35 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Downloads/myWords.txt; sourceTree = "<group>"; };
+		CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +73,12 @@
 				CEFDFE9023AE0E37006FDC35 /* ViewController.swift */,
 				CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */,
 				CEFDFEA723AEC544006FDC35 /* gameViewController.swift */,
+				CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */,
 				CEFDFE9223AE0E37006FDC35 /* Main.storyboard */,
 				CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */,
 				CEFDFE9723AE0E3B006FDC35 /* LaunchScreen.storyboard */,
 				CEFDFE9A23AE0E3B006FDC35 /* Info.plist */,
-				CEFDFEAC23B12FE4006FDC35 /* myWords.txt */,
+				CEFDFEAE23B13480006FDC35 /* myWords.txt */,
 				CEFDFEA023AE0ECC006FDC35 /* Fonts */,
 			);
 			path = HatApp;
@@ -152,7 +155,7 @@
 				CEFDFEA423AE0F08006FDC35 /* SF-Pro-Display-Bold.otf in Resources */,
 				CEFDFE9623AE0E3B006FDC35 /* Assets.xcassets in Resources */,
 				CEFDFEA223AE0EE8006FDC35 /* SF-Pro-Display-Regular.otf in Resources */,
-				CEFDFEAD23B12FE4006FDC35 /* myWords.txt in Resources */,
+				CEFDFEAF23B13480006FDC35 /* myWords.txt in Resources */,
 				CEFDFE9423AE0E37006FDC35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +172,7 @@
 				CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */,
 				CEFDFEA823AEC544006FDC35 /* gameViewController.swift in Sources */,
 				CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */,
+				CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
