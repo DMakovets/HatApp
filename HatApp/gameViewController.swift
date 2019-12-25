@@ -4,19 +4,17 @@
 //
 //  Created by Denis Makovets on 12/22/19.
 //  Copyright © 2019 Denis Makovets. All rights reserved.
-//
 
 import UIKit
 
 class gameViewController: UIViewController {
     
+    var scoreGame = ScoreGame()
     var countDown = 6
     var timer = Timer()
     var numberOfWords = 0
     var numberTGame = 1
     var wordsArray = [String]()
-    var trueWords = [String]()
-    var falseWords = [String]()
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var pass: UIButton!
@@ -27,7 +25,7 @@ class gameViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        Words.text = ""
+        Words.text = "pro"
         numberTeamGame.text = "Ход команды №\(numberTGame)"
         pass.layer.cornerRadius = 33.3
         ygadano.layer.cornerRadius = 33.3
@@ -75,35 +73,23 @@ class gameViewController: UIViewController {
         let second: Int = totalSecond % 60
         return String(format:"00:%02d", second)
     }
-    func randomWords(){
-        let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
-        Words.text = wordsArray[randomSymbol]
-        //  var intArray = [Int]()
-        // if !intArray.contains(randomSymbol) {
-        //    intArray.append(randomSymbol)
-    }
     
     @IBAction func passWord(_ sender: Any) {
         if countDown > 0 {
             let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
             Words.text = wordsArray[randomSymbol]
-        falseWords.append(wordsArray[randomSymbol])
+            scoreGame.scoreLose.append("\(wordsArray[randomSymbol])")
+            print(scoreGame.scoreLose.count)
         }
     }
     
     @IBAction func guessedWord(_ sender: Any) {
         if countDown > 0 {
             let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
-            Words.text = wordsArray[randomSymbol]
-            trueWords.append(wordsArray[randomSymbol])
+             scoreGame.scoreWin.append("\(wordsArray[randomSymbol])")
             numberOfWords += 1
             numberWords.text = "Угадано \(numberOfWords) слов"
         }
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? ScoreViewController else { return }
-        destination.tScore = trueWords.count
-        destination.fScore = falseWords.count
     }
 }
 

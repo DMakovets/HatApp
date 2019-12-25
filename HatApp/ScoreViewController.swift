@@ -10,18 +10,15 @@ import UIKit
 
 class ScoreViewController: UIViewController {
 
-    var tScore: Int = 0
-    var fScore: Int = 0
-    
+    var scoreGame = ScoreGame()
     @IBOutlet weak var goNext: UIButton!
     @IBOutlet weak var trueScore: UILabel!
     @IBOutlet weak var falseScore: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         goNext.layer.cornerRadius = 33.3
-        trueScore.text = "Угадано: \(tScore)"
-        falseScore.text = "Пас: \(fScore)"
+        trueScore.text = "Угадано: \(scoreGame.scoreLose.count)"
+        falseScore.text = "Пас: \(scoreGame.scoreLose.count)"
     }
-    
-
 }

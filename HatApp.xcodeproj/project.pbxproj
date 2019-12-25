@@ -19,6 +19,7 @@
 		CEFDFEA823AEC544006FDC35 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA723AEC544006FDC35 /* gameViewController.swift */; };
 		CEFDFEAF23B13480006FDC35 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEAE23B13480006FDC35 /* myWords.txt */; };
 		CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */; };
+		CEFDFEBD23B37C80006FDC35 /* ScoreGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CEFDFEA723AEC544006FDC35 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 		CEFDFEAE23B13480006FDC35 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Downloads/myWords.txt; sourceTree = "<group>"; };
 		CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */,
 				CEFDFEA723AEC544006FDC35 /* gameViewController.swift */,
 				CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */,
+				CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */,
 				CEFDFE9223AE0E37006FDC35 /* Main.storyboard */,
 				CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */,
 				CEFDFE9723AE0E3B006FDC35 /* LaunchScreen.storyboard */,
@@ -172,6 +175,7 @@
 				CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */,
 				CEFDFEA823AEC544006FDC35 /* gameViewController.swift in Sources */,
 				CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */,
+				CEFDFEBD23B37C80006FDC35 /* ScoreGame.swift in Sources */,
 				CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
