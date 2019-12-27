@@ -102,6 +102,21 @@
             </objects>
             <point key="canvasLocation" x="1957" y="114"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ypK-Gt-pMP">
+            <objects>
+                <viewController id="iNU-Xp-Spf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rGa-HY-6Dm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GO9-dj-ZJm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llO-96-4zw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3006" y="-718"/>
+        </scene>
         <!--Rule View Controller-->
         <scene sceneID="Ewn-NT-NAS">
             <objects>
@@ -295,7 +310,6 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="0Bb-Tm-R71" eventType="touchUpInside" id="Zox-fQ-ZCs"/>
-                                    <action selector="guessedWord:" destination="3lP-B8-f7u" eventType="touchUpInside" id="oFN-fe-oh3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ход команды №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-Y6-m7a">
