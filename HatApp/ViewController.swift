@@ -30,6 +30,11 @@ class ViewController: UIViewController {
         
         self.present(alertNewGame, animated: true, completion: nil)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
 }
 
