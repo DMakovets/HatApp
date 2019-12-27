@@ -37,7 +37,10 @@ class ScoreViewController: UIViewController {
         textLoseWords.text = "\(wordsLose)"
     }
     @IBAction func back(_ sender: Any) {
-        navigationController?.viewControllers.remove(at: 2) // удаляем "лишний" view controller
+        let nextViewController = storyboard?.instantiateViewController(identifier: "RuleViewController") as! RuleViewController
+        //nextViewController.scoreGame = scoreGame
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        navigationController?.viewControllers.remove(at: 1) // удаляем "лишний" view controller
         dismiss(animated: true, completion: nil) // переходим к предыдущему
     }
    

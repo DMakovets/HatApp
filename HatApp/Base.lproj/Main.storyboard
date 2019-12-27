@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра в слова для 2-х команд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-fG-9Uq">
-                                <rect key="frame" x="71" y="218.5" width="272" height="24"/>
+                                <rect key="frame" x="80" y="218.5" width="254" height="24"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="sdy-rN-axN">
-                                <rect key="frame" x="62" y="291" width="226.5" height="248.5"/>
+                                <rect key="frame" x="62" y="291" width="226.50000000000006" height="248.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="226.69999999999999" id="IHL-Ir-G50"/>
                                     <constraint firstAttribute="height" constant="248.30000000000001" id="MD5-u2-B2u"/>
@@ -101,21 +101,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957" y="114"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ypK-Gt-pMP">
-            <objects>
-                <viewController id="iNU-Xp-Spf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rGa-HY-6Dm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="GO9-dj-ZJm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="llO-96-4zw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3006" y="-718"/>
         </scene>
         <!--Rule View Controller-->
         <scene sceneID="Ewn-NT-NAS">
@@ -179,6 +164,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="6fT-1u-oua">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="pOP-rg-5ba"/>
+                        <barButtonItem key="rightBarButtonItem" title="Счет" id="sUY-tB-hUB">
+                            <connections>
+                                <segue destination="eur-is-a1P" kind="show" id="zD2-J5-6sE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="numberTeamRule" destination="oSE-3j-JZs" id="rBq-Mc-Pxz"/>
@@ -313,19 +303,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ход команды №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-Y6-m7a">
-                                <rect key="frame" x="99" y="170" width="216.5" height="32"/>
+                                <rect key="frame" x="97" y="170" width="220" height="32"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="26.700000762939453"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадано: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvB-R9-4IZ">
-                                <rect key="frame" x="60" y="242" width="107.5" height="26"/>
+                                <rect key="frame" x="60" y="242" width="111" height="26"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
                                 <color key="textColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пас: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-AW-SPk">
-                                <rect key="frame" x="237" y="242" width="63" height="26"/>
+                                <rect key="frame" x="237" y="242" width="64.5" height="26"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
                                 <color key="textColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -369,7 +359,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mQ8-tS-sW7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Z4D-pV-aan"/>
+                    <navigationItem key="navigationItem" id="Z4D-pV-aan">
+                        <barButtonItem key="rightBarButtonItem" title="Счет" id="XHh-XN-NNQ">
+                            <connections>
+                                <segue destination="eur-is-a1P" kind="show" id="WzF-T6-26A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="falseScore" destination="5g7-AW-SPk" id="JMh-nL-rJW"/>
                         <outlet property="goNext" destination="uF4-Oe-gi6" id="Rnc-9o-wfg"/>
@@ -400,8 +396,79 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
+        <!--Full Score View Controller-->
+        <scene sceneID="51C-h3-KtR">
+            <objects>
+                <viewController storyboardIdentifier="FullScoreViewController" id="eur-is-a1P" customClass="FullScoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a5h-ot-a0f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общий счет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO9-t1-nZO">
+                                <rect key="frame" x="130" y="170" width="154" height="32"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="26.700000762939453"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадано: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUE-pX-f1Z">
+                                <rect key="frame" x="60" y="242" width="111" height="26"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <color key="textColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пас: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oni-mT-cyd">
+                                <rect key="frame" x="237" y="242" width="64.5" height="26"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21.700000762939453"/>
+                                <color key="textColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lBl-9R-FRC">
+                                <rect key="frame" x="237" y="275.5" width="137" height="418"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tzM-mP-4TD">
+                                <rect key="frame" x="60" y="275.5" width="137" height="418"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lBl-9R-FRC" firstAttribute="leading" secondItem="tzM-mP-4TD" secondAttribute="trailing" constant="40" id="0l6-bp-4aS"/>
+                            <constraint firstItem="lBl-9R-FRC" firstAttribute="leading" secondItem="oni-mT-cyd" secondAttribute="leading" id="1NH-7T-fRh"/>
+                            <constraint firstItem="lBl-9R-FRC" firstAttribute="bottom" secondItem="tzM-mP-4TD" secondAttribute="bottom" id="6Sq-wE-gVD"/>
+                            <constraint firstItem="SO9-t1-nZO" firstAttribute="centerX" secondItem="a5h-ot-a0f" secondAttribute="centerX" id="Lt6-JX-tJT"/>
+                            <constraint firstItem="tzM-mP-4TD" firstAttribute="leading" secondItem="CUE-pX-f1Z" secondAttribute="leading" id="Ne8-DG-B8O"/>
+                            <constraint firstItem="tzM-mP-4TD" firstAttribute="width" secondItem="lBl-9R-FRC" secondAttribute="width" id="Yz3-Wa-7Es"/>
+                            <constraint firstItem="CUE-pX-f1Z" firstAttribute="leading" secondItem="Zgd-wL-acZ" secondAttribute="leading" constant="60" id="bSK-en-jwV"/>
+                            <constraint firstItem="tzM-mP-4TD" firstAttribute="top" secondItem="CUE-pX-f1Z" secondAttribute="bottom" constant="7.5" id="iqW-v1-MJh"/>
+                            <constraint firstItem="CUE-pX-f1Z" firstAttribute="top" secondItem="SO9-t1-nZO" secondAttribute="bottom" constant="40" id="itI-sg-qRD"/>
+                            <constraint firstItem="lBl-9R-FRC" firstAttribute="top" secondItem="tzM-mP-4TD" secondAttribute="top" id="kV9-C9-5P8"/>
+                            <constraint firstItem="Zgd-wL-acZ" firstAttribute="trailing" secondItem="lBl-9R-FRC" secondAttribute="trailing" constant="40" id="rkJ-9T-pmF"/>
+                            <constraint firstItem="tzM-mP-4TD" firstAttribute="leading" secondItem="Zgd-wL-acZ" secondAttribute="leading" constant="60" id="sRU-wS-jTl"/>
+                            <constraint firstItem="SO9-t1-nZO" firstAttribute="top" secondItem="a5h-ot-a0f" secondAttribute="top" constant="170" id="upw-d9-tjF"/>
+                            <constraint firstItem="oni-mT-cyd" firstAttribute="top" secondItem="CUE-pX-f1Z" secondAttribute="top" id="vMG-J2-cj8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zgd-wL-acZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yh7-ps-1Ze"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhB-py-Owc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3710" y="894"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="196" height="214.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WzF-T6-26A"/>
+    </inferredMetricsTieBreakers>
 </document>

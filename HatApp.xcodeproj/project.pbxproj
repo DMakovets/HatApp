@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEB4C3C823B65AD9004E54EB /* FullScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */; };
 		CEEEFC4E23B5DC6E006C8B06 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */; };
 		CEFDFE8D23AE0E37006FDC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */; };
 		CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScoreViewController.swift; sourceTree = "<group>"; };
 		CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Downloads/myWords.txt; sourceTree = "<group>"; };
 		CEFDFE8923AE0E37006FDC35 /* HatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */,
 				CEFDFEA723AEC544006FDC35 /* GameViewController.swift */,
 				CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */,
+				CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */,
 				CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */,
 				CEFDFE9223AE0E37006FDC35 /* Main.storyboard */,
 				CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */,
@@ -176,6 +179,7 @@
 				CEFDFEA823AEC544006FDC35 /* GameViewController.swift in Sources */,
 				CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */,
 				CEFDFEBD23B37C80006FDC35 /* ScoreGame.swift in Sources */,
+				CEB4C3C823B65AD9004E54EB /* FullScoreViewController.swift in Sources */,
 				CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
