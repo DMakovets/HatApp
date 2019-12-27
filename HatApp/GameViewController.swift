@@ -25,7 +25,6 @@ class gameViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        Words.text = "pro"
         numberTeamGame.text = "Ход команды №\(numberTGame)"
         pass.layer.cornerRadius = 33.3
         ygadano.layer.cornerRadius = 33.3
@@ -33,6 +32,7 @@ class gameViewController: UIViewController {
         numberWords.text = "Угадано \(numberOfWords) слов"
         super.viewDidLoad()
         readFromFile()
+        randomWord()
         
     }
     
@@ -62,6 +62,7 @@ class gameViewController: UIViewController {
     func endTimer() {
         timer.invalidate()
         let nextViewController = storyboard?.instantiateViewController(identifier: "ScoreViewController") as! ScoreViewController
+        nextViewController.scoreGame = scoreGame
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
@@ -76,20 +77,25 @@ class gameViewController: UIViewController {
     
     @IBAction func passWord(_ sender: Any) {
         if countDown > 0 {
-            let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
-            Words.text = wordsArray[randomSymbol]
-            scoreGame.scoreLose.append("\(wordsArray[randomSymbol])")
-            print(scoreGame.scoreLose.count)
+          randomWord()
+    scoreGame.scoreLose.append(Words.text!)
         }
     }
     
     @IBAction func guessedWord(_ sender: Any) {
         if countDown > 0 {
-            let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
-             scoreGame.scoreWin.append("\(wordsArray[randomSymbol])")
+            randomWord()
+//            let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
+//            Words.text = wordsArray[randomSymbol]
+//            scoreGame.scoreWin.append("\(wordsArray[randomSymbol])")
             numberOfWords += 1
             numberWords.text = "Угадано \(numberOfWords) слов"
+            scoreGame.scoreWin.append(Words.text!)
         }
+    }
+    func randomWord(){
+        let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
+        Words.text = wordsArray[randomSymbol]
     }
 }
 

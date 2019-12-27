@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEEEFC4E23B5DC6E006C8B06 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */; };
 		CEFDFE8D23AE0E37006FDC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */; };
 		CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */; };
 		CEFDFE9123AE0E37006FDC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE9023AE0E37006FDC35 /* ViewController.swift */; };
@@ -16,13 +17,13 @@
 		CEFDFEA223AE0EE8006FDC35 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEA123AE0EE7006FDC35 /* SF-Pro-Display-Regular.otf */; };
 		CEFDFEA423AE0F08006FDC35 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */; };
 		CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */; };
-		CEFDFEA823AEC544006FDC35 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA723AEC544006FDC35 /* gameViewController.swift */; };
-		CEFDFEAF23B13480006FDC35 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEAE23B13480006FDC35 /* myWords.txt */; };
+		CEFDFEA823AEC544006FDC35 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA723AEC544006FDC35 /* GameViewController.swift */; };
 		CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */; };
 		CEFDFEBD23B37C80006FDC35 /* ScoreGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Downloads/myWords.txt; sourceTree = "<group>"; };
 		CEFDFE8923AE0E37006FDC35 /* HatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +35,7 @@
 		CEFDFEA123AE0EE7006FDC35 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
-		CEFDFEA723AEC544006FDC35 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
-		CEFDFEAE23B13480006FDC35 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Downloads/myWords.txt; sourceTree = "<group>"; };
+		CEFDFEA723AEC544006FDC35 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,14 +74,14 @@
 				CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */,
 				CEFDFE9023AE0E37006FDC35 /* ViewController.swift */,
 				CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */,
-				CEFDFEA723AEC544006FDC35 /* gameViewController.swift */,
+				CEFDFEA723AEC544006FDC35 /* GameViewController.swift */,
 				CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */,
 				CEFDFEBC23B37C80006FDC35 /* ScoreGame.swift */,
 				CEFDFE9223AE0E37006FDC35 /* Main.storyboard */,
 				CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */,
 				CEFDFE9723AE0E3B006FDC35 /* LaunchScreen.storyboard */,
 				CEFDFE9A23AE0E3B006FDC35 /* Info.plist */,
-				CEFDFEAE23B13480006FDC35 /* myWords.txt */,
+				CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */,
 				CEFDFEA023AE0ECC006FDC35 /* Fonts */,
 			);
 			path = HatApp;
@@ -154,11 +154,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEEFC4E23B5DC6E006C8B06 /* myWords.txt in Resources */,
 				CEFDFE9923AE0E3B006FDC35 /* LaunchScreen.storyboard in Resources */,
 				CEFDFEA423AE0F08006FDC35 /* SF-Pro-Display-Bold.otf in Resources */,
 				CEFDFE9623AE0E3B006FDC35 /* Assets.xcassets in Resources */,
 				CEFDFEA223AE0EE8006FDC35 /* SF-Pro-Display-Regular.otf in Resources */,
-				CEFDFEAF23B13480006FDC35 /* myWords.txt in Resources */,
 				CEFDFE9423AE0E37006FDC35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +173,7 @@
 				CEFDFE9123AE0E37006FDC35 /* ViewController.swift in Sources */,
 				CEFDFE8D23AE0E37006FDC35 /* AppDelegate.swift in Sources */,
 				CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */,
-				CEFDFEA823AEC544006FDC35 /* gameViewController.swift in Sources */,
+				CEFDFEA823AEC544006FDC35 /* GameViewController.swift in Sources */,
 				CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */,
 				CEFDFEBD23B37C80006FDC35 /* ScoreGame.swift in Sources */,
 				CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */,
@@ -323,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AX5Q84ZQGM;
 				INFOPLIST_FILE = HatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AX5Q84ZQGM;
 				INFOPLIST_FILE = HatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
