@@ -9,7 +9,7 @@ import Foundation
 class ScoreGame {
     var scoreWin = [String]()
     var scoreLose = [String]()
-    var numberOfGame = 0
+   // var numberOfGame = 0
     init (){
     }
    

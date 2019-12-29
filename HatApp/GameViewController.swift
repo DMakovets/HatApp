@@ -85,9 +85,6 @@ class gameViewController: UIViewController {
     @IBAction func guessedWord(_ sender: Any) {
         if countDown > 0 {
             randomWord()
-//            let randomSymbol = Int.random(in: 0...wordsArray.count - 2)
-//            Words.text = wordsArray[randomSymbol]
-//            scoreGame.scoreWin.append("\(wordsArray[randomSymbol])")
             numberOfWords += 1
             numberWords.text = "Угадано \(numberOfWords) слов"
             scoreGame.scoreWin.append(Words.text!)

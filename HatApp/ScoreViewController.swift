@@ -36,12 +36,26 @@ class ScoreViewController: UIViewController {
         let wordsLose = scoreGame.scoreLose.joined(separator: "\n\n")
         textLoseWords.text = "\(wordsLose)"
     }
+
     @IBAction func back(_ sender: Any) {
-        let nextViewController = storyboard?.instantiateViewController(identifier: "RuleViewController") as! RuleViewController
-        //nextViewController.scoreGame = scoreGame
-        self.navigationController?.pushViewController(nextViewController, animated: true)
-        navigationController?.viewControllers.remove(at: 1) // удаляем "лишний" view controller
-        dismiss(animated: true, completion: nil) // переходим к предыдущему
+        let nGame = UserDefaults.standard.integer(forKey: "numberGame")
+        UserDefaults.standard.setValue(1, forKey: "numberGame")
+        if nGame == 1 {
+        var secondMass = UserDefaults.standard.array(forKey: "secondMass") ?? []
+        secondMass.append(scoreGame.scoreWin.count)
+        UserDefaults.standard.setValue(secondMass, forKey: "secondMass")
+        guard var viewControllers = navigationController?.viewControllers else { return }
+        viewControllers.removeLast(3)
+        navigationController?.setViewControllers(viewControllers, animated: true)
+        UserDefaults.standard.removeObject(forKey: "numberGame")
+        }else{
+            var firstMass = UserDefaults.standard.array(forKey: "firstMass") ?? []
+            firstMass.append(scoreGame.scoreWin.count)
+            UserDefaults.standard.setValue(firstMass, forKey: "firstMass")
+            UserDefaults.standard.setValue(1, forKey: "numberGame")
+            guard var viewControllers = navigationController?.viewControllers else { return }
+            viewControllers.removeLast(2)
+            navigationController?.setViewControllers(viewControllers, animated: true)
+        }
     }
-   
-}
+    }

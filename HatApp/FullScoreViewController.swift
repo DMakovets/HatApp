@@ -10,21 +10,18 @@ import UIKit
 
 class FullScoreViewController: UIViewController {
 
+    @IBOutlet weak var firstTeam: UITextView!
+    @IBOutlet weak var secondTeam: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let f = UserDefaults.standard.array(forKey: "firstMass") as? [String]
+        firstTeam.text = f?.joined(separator: "\n")
+        let a = UserDefaults.standard.array(forKey: "secondMass") as? [String]
+        secondTeam.text = a?.joined(separator: "\n")
+    }
+    @IBAction func del(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "firstMass")
+        UserDefaults.standard.removeObject(forKey: "secondMass")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
