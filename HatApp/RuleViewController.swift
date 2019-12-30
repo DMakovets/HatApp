@@ -9,7 +9,9 @@
 import UIKit
 
 class RuleViewController: UIViewController {
+    
     var numberTRule = 1
+    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var numberTeamRule: UILabel!
     override func viewDidLoad() {

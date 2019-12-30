@@ -10,24 +10,24 @@ import UIKit
 class gameViewController: UIViewController {
     
     var scoreGame = ScoreGame()
-    var countDown = 6
+    var countDown = 59
     var timer = Timer()
     var numberOfWords = 0
     var numberTGame = 1
     var wordsArray = [String]()
     
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var pass: UIButton!
     @IBOutlet weak var numberWords: UILabel!
-    @IBOutlet weak var ygadano: UIButton!
+    @IBOutlet weak var passButton: UIButton!
+    @IBOutlet weak var winButton: UIButton!
     @IBOutlet weak var numberTeamGame: UILabel!
     @IBOutlet weak var Words: UILabel!
     
     override func viewDidLoad() {
         
         numberTeamGame.text = "Ход команды №\(numberTGame)"
-        pass.layer.cornerRadius = 33.3
-        ygadano.layer.cornerRadius = 33.3
+        passButton.layer.cornerRadius = 33.3
+        winButton.layer.cornerRadius = 33.3
         timerLabel.text = "00:\(countDown)"
         numberWords.text = "Угадано \(numberOfWords) слов"
         super.viewDidLoad()
@@ -77,8 +77,8 @@ class gameViewController: UIViewController {
     
     @IBAction func passWord(_ sender: Any) {
         if countDown > 0 {
-          randomWord()
-    scoreGame.scoreLose.append(Words.text!)
+            randomWord()
+            scoreGame.scoreLose.append(Words.text!)
         }
     }
     
