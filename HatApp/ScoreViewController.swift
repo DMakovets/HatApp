@@ -36,26 +36,35 @@ class ScoreViewController: UIViewController {
         let wordsLose = scoreGame.scoreLose.joined(separator: "\n\n")
         textLoseWords.text = "\(wordsLose)"
     }
-
+    
+    func saveFirstTeam() {
+        var firstMass = UserDefaults.standard.array(forKey: "firstMass") ?? []
+        firstMass.append("\(scoreGame.scoreWin.count)")
+        UserDefaults.standard.setValue(firstMass, forKey: "firstMass")
+        
+    }
+    func saveSecondTeam() {
+        var secondMass = UserDefaults.standard.array(forKey: "secondMass") ?? []
+        secondMass.append("\(scoreGame.scoreWin.count)")
+        UserDefaults.standard.setValue(secondMass, forKey: "secondMass")
+    }
+    
     @IBAction func back(_ sender: Any) {
         let nGame = UserDefaults.standard.integer(forKey: "numberGame")
         UserDefaults.standard.setValue(1, forKey: "numberGame")
-        if nGame == 1 {
-        var secondMass = UserDefaults.standard.array(forKey: "secondMass") ?? []
-        secondMass.append(scoreGame.scoreWin.count)
-        UserDefaults.standard.setValue(secondMass, forKey: "secondMass")
-        guard var viewControllers = navigationController?.viewControllers else { return }
-        viewControllers.removeLast(3)
-        navigationController?.setViewControllers(viewControllers, animated: true)
-        UserDefaults.standard.removeObject(forKey: "numberGame")
-        }else{
-            var firstMass = UserDefaults.standard.array(forKey: "firstMass") ?? []
-            firstMass.append(scoreGame.scoreWin.count)
-            UserDefaults.standard.setValue(firstMass, forKey: "firstMass")
+        
+        if !(nGame == 1) {
+            saveFirstTeam()
             UserDefaults.standard.setValue(1, forKey: "numberGame")
             guard var viewControllers = navigationController?.viewControllers else { return }
             viewControllers.removeLast(2)
             navigationController?.setViewControllers(viewControllers, animated: true)
+        }else{
+            saveSecondTeam()
+            UserDefaults.standard.removeObject(forKey: "numberGame")
+            guard var viewControllers = navigationController?.viewControllers else { return }
+            viewControllers.removeLast(3)
+            navigationController?.setViewControllers(viewControllers, animated: true)
         }
     }
-    }
+}

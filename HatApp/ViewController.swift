@@ -22,9 +22,11 @@ class ViewController: UIViewController {
     @IBAction func showAllert(_ sender: Any) {
         let alertNewGame = UIAlertController(title: "Начать новую игру?", message: "Результаты последней игры будут удалены", preferredStyle: .alert)
         let alertGo = UIAlertAction(title: "Начать", style: .default) { action in
-            self.performSegue(withIdentifier: "ruleSegue", sender: nil)}
+            self.performSegue(withIdentifier: "ruleSegue", sender: nil)
+            UserDefaults.standard.removeObject(forKey: "firstMass")
+            UserDefaults.standard.removeObject(forKey: "secondMass")
+        }
         let alertNo = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
-        
         alertNewGame.addAction(alertGo)
         alertNewGame.addAction(alertNo)
         
