@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CEB4C3C823B65AD9004E54EB /* FullScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */; };
-		CEEEFC4E23B5DC6E006C8B06 /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */; };
-		CEFDFE8D23AE0E37006FDC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */; };
+		CEB4C3CA23BBB261004E54EB /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEB4C3C923BBB261004E54EB /* myWords.txt */; };
+		CEB4C3CC23BBB53A004E54EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4C3CB23BBB539004E54EB /* AppDelegate.swift */; };
 		CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */; };
 		CEFDFE9123AE0E37006FDC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE9023AE0E37006FDC35 /* ViewController.swift */; };
 		CEFDFE9423AE0E37006FDC35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFE9223AE0E37006FDC35 /* Main.storyboard */; };
 		CEFDFE9623AE0E3B006FDC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */; };
 		CEFDFE9923AE0E3B006FDC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFE9723AE0E3B006FDC35 /* LaunchScreen.storyboard */; };
-		CEFDFEA223AE0EE8006FDC35 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEA123AE0EE7006FDC35 /* SF-Pro-Display-Regular.otf */; };
-		CEFDFEA423AE0F08006FDC35 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */; };
 		CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */; };
 		CEFDFEA823AEC544006FDC35 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEA723AEC544006FDC35 /* GameViewController.swift */; };
 		CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */; };
@@ -25,17 +23,15 @@
 
 /* Begin PBXFileReference section */
 		CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScoreViewController.swift; sourceTree = "<group>"; };
-		CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = myWords.txt; path = ../../Downloads/myWords.txt; sourceTree = "<group>"; };
+		CEB4C3C923BBB261004E54EB /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myWords.txt; sourceTree = "<group>"; };
+		CEB4C3CB23BBB539004E54EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFDFE8923AE0E37006FDC35 /* HatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEFDFE9023AE0E37006FDC35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEFDFE9323AE0E37006FDC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFDFE9823AE0E3B006FDC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFDFE9A23AE0E3B006FDC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEFDFEA123AE0EE7006FDC35 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
-		CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 		CEFDFEA723AEC544006FDC35 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
@@ -72,8 +68,8 @@
 		CEFDFE8B23AE0E37006FDC35 /* HatApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEFDFE8C23AE0E37006FDC35 /* AppDelegate.swift */,
 				CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */,
+				CEB4C3CB23BBB539004E54EB /* AppDelegate.swift */,
 				CEFDFE9023AE0E37006FDC35 /* ViewController.swift */,
 				CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */,
 				CEFDFEA723AEC544006FDC35 /* GameViewController.swift */,
@@ -84,19 +80,9 @@
 				CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */,
 				CEFDFE9723AE0E3B006FDC35 /* LaunchScreen.storyboard */,
 				CEFDFE9A23AE0E3B006FDC35 /* Info.plist */,
-				CEEEFC4D23B5DC6E006C8B06 /* myWords.txt */,
-				CEFDFEA023AE0ECC006FDC35 /* Fonts */,
+				CEB4C3C923BBB261004E54EB /* myWords.txt */,
 			);
 			path = HatApp;
-			sourceTree = "<group>";
-		};
-		CEFDFEA023AE0ECC006FDC35 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				CEFDFEA323AE0F08006FDC35 /* SF-Pro-Display-Bold.otf */,
-				CEFDFEA123AE0EE7006FDC35 /* SF-Pro-Display-Regular.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +143,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEEFC4E23B5DC6E006C8B06 /* myWords.txt in Resources */,
 				CEFDFE9923AE0E3B006FDC35 /* LaunchScreen.storyboard in Resources */,
-				CEFDFEA423AE0F08006FDC35 /* SF-Pro-Display-Bold.otf in Resources */,
 				CEFDFE9623AE0E3B006FDC35 /* Assets.xcassets in Resources */,
-				CEFDFEA223AE0EE8006FDC35 /* SF-Pro-Display-Regular.otf in Resources */,
+				CEB4C3CA23BBB261004E54EB /* myWords.txt in Resources */,
 				CEFDFE9423AE0E37006FDC35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB4C3CC23BBB53A004E54EB /* AppDelegate.swift in Sources */,
 				CEFDFE9123AE0E37006FDC35 /* ViewController.swift in Sources */,
-				CEFDFE8D23AE0E37006FDC35 /* AppDelegate.swift in Sources */,
 				CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */,
 				CEFDFEA823AEC544006FDC35 /* GameViewController.swift in Sources */,
 				CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */,
