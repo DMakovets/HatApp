@@ -17,6 +17,7 @@ class ScoreViewController: UIViewController {
     @IBOutlet weak var falseScore: UILabel!
     @IBOutlet weak var textWinWords: UITextView!
     @IBOutlet weak var textLoseWords: UITextView!
+    @IBOutlet weak var numberTeamScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,17 @@ class ScoreViewController: UIViewController {
         printWinWord()
         printLoseWord()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+           numberRule()
+       }
+       func numberRule(){
+       let nGame = UserDefaults.standard.integer(forKey: "numberGame")
+       if !(nGame == 1) {
+           numberTeamScore.text = "Счет команды №1"
+       }else{
+           numberTeamScore.text = "Счет команды №2"
+       }
+    }
     func printWinWord(){
         let wordsWin = scoreGame.scoreWin.joined(separator: "\n\n")
         textWinWords.text = "\(wordsWin)"
@@ -50,21 +61,22 @@ class ScoreViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        let nGame = UserDefaults.standard.integer(forKey: "numberGame")
+        let nGame = UserDefaults.standard.integer(forKey: "numberGame") 
         UserDefaults.standard.setValue(1, forKey: "numberGame")
         
         if !(nGame == 1) {
             saveFirstTeam()
-            UserDefaults.standard.setValue(1, forKey: "numberGame")
+            let nGame = UserDefaults.standard.integer(forKey: "numberGame")
             guard var viewControllers = navigationController?.viewControllers else { return }
             viewControllers.removeLast(2)
             navigationController?.setViewControllers(viewControllers, animated: true)
         }else{
-            saveSecondTeam()
             UserDefaults.standard.removeObject(forKey: "numberGame")
+            saveSecondTeam()
             guard var viewControllers = navigationController?.viewControllers else { return }
             viewControllers.removeLast(3)
             navigationController?.setViewControllers(viewControllers, animated: true)
+        
         }
     }
 }

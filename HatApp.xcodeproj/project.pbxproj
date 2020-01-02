@@ -10,8 +10,8 @@
 		CEB4C3C823B65AD9004E54EB /* FullScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */; };
 		CEB4C3CA23BBB261004E54EB /* myWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEB4C3C923BBB261004E54EB /* myWords.txt */; };
 		CEB4C3CC23BBB53A004E54EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4C3CB23BBB539004E54EB /* AppDelegate.swift */; };
+		CEB4C3D023BE6A8B004E54EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4C3CF23BE6A8B004E54EB /* ViewController.swift */; };
 		CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */; };
-		CEFDFE9123AE0E37006FDC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE9023AE0E37006FDC35 /* ViewController.swift */; };
 		CEFDFE9423AE0E37006FDC35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFE9223AE0E37006FDC35 /* Main.storyboard */; };
 		CEFDFE9623AE0E3B006FDC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */; };
 		CEFDFE9923AE0E3B006FDC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFDFE9723AE0E3B006FDC35 /* LaunchScreen.storyboard */; };
@@ -25,9 +25,9 @@
 		CEB4C3C723B65AD9004E54EB /* FullScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScoreViewController.swift; sourceTree = "<group>"; };
 		CEB4C3C923BBB261004E54EB /* myWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myWords.txt; sourceTree = "<group>"; };
 		CEB4C3CB23BBB539004E54EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB4C3CF23BE6A8B004E54EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEFDFE8923AE0E37006FDC35 /* HatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEFDFE9023AE0E37006FDC35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEFDFE9323AE0E37006FDC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEFDFE9523AE0E3B006FDC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFDFE9823AE0E3B006FDC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			children = (
 				CEFDFE8E23AE0E37006FDC35 /* SceneDelegate.swift */,
 				CEB4C3CB23BBB539004E54EB /* AppDelegate.swift */,
-				CEFDFE9023AE0E37006FDC35 /* ViewController.swift */,
+				CEB4C3CF23BE6A8B004E54EB /* ViewController.swift */,
 				CEFDFEA523AE7E77006FDC35 /* RuleViewController.swift */,
 				CEFDFEA723AEC544006FDC35 /* GameViewController.swift */,
 				CEFDFEB023B16311006FDC35 /* ScoreViewController.swift */,
@@ -158,12 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB4C3CC23BBB53A004E54EB /* AppDelegate.swift in Sources */,
-				CEFDFE9123AE0E37006FDC35 /* ViewController.swift in Sources */,
 				CEFDFEA623AE7E77006FDC35 /* RuleViewController.swift in Sources */,
 				CEFDFEA823AEC544006FDC35 /* GameViewController.swift in Sources */,
 				CEFDFE8F23AE0E37006FDC35 /* SceneDelegate.swift in Sources */,
 				CEFDFEBD23B37C80006FDC35 /* ScoreGame.swift in Sources */,
 				CEB4C3C823B65AD9004E54EB /* FullScoreViewController.swift in Sources */,
+				CEB4C3D023BE6A8B004E54EB /* ViewController.swift in Sources */,
 				CEFDFEB123B16311006FDC35 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

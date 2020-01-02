@@ -13,7 +13,6 @@ class gameViewController: UIViewController {
     var countDown = 6
     var timer = Timer()
     var numberOfWords = 0
-    var numberTGame = 1
     var wordsArray = [String]()
     
     @IBOutlet weak var timerLabel: UILabel!
@@ -25,7 +24,6 @@ class gameViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        numberTeamGame.text = "Ход команды №\(numberTGame)"
         passButton.layer.cornerRadius = 33.3
         winButton.layer.cornerRadius = 33.3
         timerLabel.text = "00:\(countDown)"
@@ -34,6 +32,17 @@ class gameViewController: UIViewController {
         readFromFile()
         randomWord()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        numberRule()
+    }
+    func numberRule(){
+    let nGame = UserDefaults.standard.integer(forKey: "numberGame")
+    if !(nGame == 1) {
+        numberTeamGame.text = "Ход команды №1"
+    }else{
+        numberTeamGame.text = "Ход команды №2"
+    }
     }
     
     func readFromFile() {

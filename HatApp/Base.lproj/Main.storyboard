@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра в слова для 2-х команд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-fG-9Uq">
-                                <rect key="frame" x="75.333333333333343" y="218.66666666666666" width="263.33333333333326" height="24"/>
+                                <rect key="frame" x="75.666666666666686" y="218.66666666666666" width="263" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ход команды №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-3j-JZs">
-                                <rect key="frame" x="94.666666666666671" y="170" width="224.66666666666663" height="32"/>
+                                <rect key="frame" x="94.666666666666686" y="170" width="225" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26.700000762939453"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -133,7 +133,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-YB-nnS">
-                                <rect key="frame" x="47" y="278.33333333333331" width="320" height="274.99999999999994"/>
+                                <rect key="frame" x="47" y="328.33333333333331" width="320" height="274.99999999999994"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="6Fy-sp-4R0"/>
@@ -157,7 +157,7 @@
                             <constraint firstItem="oSE-3j-JZs" firstAttribute="top" secondItem="KI4-EU-1YU" secondAttribute="top" constant="170" id="003-bl-hbV"/>
                             <constraint firstItem="GRw-YB-nnS" firstAttribute="centerX" secondItem="KI4-EU-1YU" secondAttribute="centerX" id="Frq-VQ-zeZ"/>
                             <constraint firstItem="oSE-3j-JZs" firstAttribute="centerX" secondItem="KI4-EU-1YU" secondAttribute="centerX" id="Iyc-3a-a4V"/>
-                            <constraint firstItem="bAg-4j-Zox" firstAttribute="top" secondItem="GRw-YB-nnS" secondAttribute="bottom" constant="150" id="WQU-An-3sB"/>
+                            <constraint firstItem="bAg-4j-Zox" firstAttribute="top" secondItem="GRw-YB-nnS" secondAttribute="bottom" constant="100" id="WQU-An-3sB"/>
                             <constraint firstItem="bAg-4j-Zox" firstAttribute="centerX" secondItem="KI4-EU-1YU" secondAttribute="centerX" id="bS2-w0-3OZ"/>
                             <constraint firstItem="yW3-d1-3fB" firstAttribute="bottom" secondItem="bAg-4j-Zox" secondAttribute="bottom" constant="92" id="pNy-oy-Uoc"/>
                         </constraints>
@@ -213,13 +213,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytt-Og-hDJ">
-                                <rect key="frame" x="102.33333333333333" y="246.99999999999997" width="209.33333333333337" height="87.666666666666657"/>
+                                <rect key="frame" x="102.66666666666669" y="246.99999999999997" width="209" height="87.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="73.199996948242188"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадано 0 слов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhS-XM-hSr">
-                                <rect key="frame" x="125.66666666666667" y="325" width="162.66666666666663" height="26"/>
+                                <rect key="frame" x="125.66666666666669" y="325" width="163" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21.700000762939453"/>
                                 <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -240,7 +240,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWH-3W-xUz">
-                                <rect key="frame" x="177.33333333333334" y="619.66666666666663" width="59.666666666666657" height="28"/>
+                                <rect key="frame" x="177" y="619.66666666666663" width="60" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23.299999237060547"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -304,7 +304,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ход команды №1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-Y6-m7a">
-                                <rect key="frame" x="94.666666666666671" y="170" width="224.66666666666663" height="32"/>
+                                <rect key="frame" x="94.666666666666686" y="170" width="225" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26.700000762939453"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -369,6 +369,7 @@
                     <connections>
                         <outlet property="falseScore" destination="5g7-AW-SPk" id="JMh-nL-rJW"/>
                         <outlet property="goNext" destination="uF4-Oe-gi6" id="Rnc-9o-wfg"/>
+                        <outlet property="numberTeamScore" destination="sz0-Y6-m7a" id="6OT-vg-47M"/>
                         <outlet property="textLoseWords" destination="16N-No-jCa" id="ANf-2Y-TS9"/>
                         <outlet property="textWinWords" destination="Fc2-Uq-d4V" id="Bw1-rQ-UH9"/>
                         <outlet property="trueScore" destination="OvB-R9-4IZ" id="LC8-AZ-Y8X"/>
@@ -405,13 +406,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общий счет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO9-t1-nZO">
-                                <rect key="frame" x="128.33333333333331" y="170" width="157.33333333333331" height="32"/>
+                                <rect key="frame" x="128.66666666666666" y="170" width="156.99999999999997" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26.700000762939453"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Команда 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUE-pX-f1Z">
-                                <rect key="frame" x="59.999999999999993" y="242" width="111.33333333333331" height="26"/>
+                                <rect key="frame" x="60.000000000000007" y="242" width="111.66666666666669" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21.700000762939453"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
