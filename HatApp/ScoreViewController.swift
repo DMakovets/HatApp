@@ -24,6 +24,8 @@ class ScoreViewController: UIViewController {
         goNext.layer.cornerRadius = 33.3
         trueScore.text = "Угадано: \(scoreGame.scoreWin.count)"
         falseScore.text = "Пас: \(scoreGame.scoreLose.count)"
+        textWinWords.isEditable = false
+        textLoseWords.isEditable = false
         printWinWord()
         printLoseWord()
     }
@@ -66,7 +68,6 @@ class ScoreViewController: UIViewController {
         
         if !(nGame == 1) {
             saveFirstTeam()
-            let nGame = UserDefaults.standard.integer(forKey: "numberGame")
             guard var viewControllers = navigationController?.viewControllers else { return }
             viewControllers.removeLast(2)
             navigationController?.setViewControllers(viewControllers, animated: true)

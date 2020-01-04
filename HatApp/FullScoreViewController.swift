@@ -22,6 +22,8 @@ class FullScoreViewController: UIViewController {
         
         firstTeam.text = array1Team.joined(separator: "\n")
         secondTeam.text = array2Team.joined(separator: "\n")
+        firstTeam.isEditable = false
+        secondTeam.isEditable = false
         numberWordsTeam1()
         numberWordsTeam2()
         
