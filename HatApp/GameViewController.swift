@@ -10,7 +10,7 @@ import UIKit
 class gameViewController: UIViewController {
     
     var scoreGame = ScoreGame()
-    var countDown = 6
+    var countDown = 59
     var timer = Timer()
     var numberOfWords = 0
     var wordsArray = [String]()
